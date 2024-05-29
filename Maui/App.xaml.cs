@@ -1,4 +1,7 @@
-﻿namespace Maui
+﻿using Microsoft.Maui;
+using Microsoft.Maui.Controls;
+
+namespace Maui
 {
     public partial class App : Application
     {
@@ -6,7 +9,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new MainPage());
         }
     }
 }

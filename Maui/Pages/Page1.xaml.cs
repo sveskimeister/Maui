@@ -1,9 +1,13 @@
-namespace Pages;
+using Maui.ViewModels;
 
-public partial class Page1 : ContentPage
+namespace Pages
 {
-	public Page1()
-	{
-		InitializeComponent();
-	}
+    public partial class Page1 : ContentPage
+    {
+        public Page1()
+        {
+            InitializeComponent();
+            BindingContext = new ProductsViewModel();
+        }
+    }
 }

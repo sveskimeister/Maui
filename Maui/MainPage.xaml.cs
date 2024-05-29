@@ -1,10 +1,9 @@
-﻿using Pages;
+﻿using Microsoft.Maui.Controls;
 
 namespace Maui
 {
     public partial class MainPage : ContentPage
     {
-
         public MainPage()
         {
             InitializeComponent();
@@ -12,8 +11,7 @@ namespace Maui
 
         private async void OnNavigateButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page1());
+            await Navigation.PushAsync(new Pages.Page1());
         }
     }
-
 }

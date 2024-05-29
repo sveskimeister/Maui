@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Maui.MainPage">
 
@@ -12,17 +11,20 @@
             <Label
                 Text="Tere"
                 SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
+                FontSize="50"
                 HorizontalOptions="Center" />
 
             <Button
                 Text="Lisa ja vaata tooteid"
+                FontSize="20"
                 Clicked="OnNavigateButtonClicked"
                 BackgroundColor="Pink"
                 TextColor="White"
                 BorderColor="White"
                 FontAttributes="Bold"
-                CornerRadius="10"
+                CornerRadius="6"
+                HeightRequest="60"
+                WidthRequest="300"
                 HorizontalOptions="Center" 
                 VerticalOptions="Center"/>
 
