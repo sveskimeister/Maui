@@ -45,7 +45,6 @@
                                    Text="{Binding Price, StringFormat='Price: {0:C}'}"
                                    FontSize="13"
                                    FontAttributes="Bold" />
-
                             <Button 
                                     Grid.Column="1"
                                     Text="Edit"
@@ -72,11 +71,7 @@
                     <ContentView>
                         <VerticalStackLayout HorizontalOptions="Center"
                                              VerticalOptions="Center">
-                            <Label Text="No Products Found"
-                                   FontSize="18"
-                                   FontAttributes="Bold"
-                                   HorizontalTextAlignment="Center"/>
-                            <Label Text="Create a product"/>
+                            <Label Text="Create product"/>
                         </VerticalStackLayout>
                     </ContentView>
                 </CollectionView.EmptyView>
@@ -96,7 +91,6 @@
                         <Label Text="Name" 
                                TextColor="Pink"/>
                         <Entry Text="{Binding OperatingProduct.Name}"
-                               Placeholder="Product name"
                                BackgroundColor="Pink" />
                     </VerticalStackLayout>
                     <VerticalStackLayout Grid.Row="0"
