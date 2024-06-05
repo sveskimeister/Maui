@@ -2,33 +2,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Maui.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
+    <Grid>
+        <Image 
+            Source="pilt.jpg"
+            Aspect="AspectFill"
+            Opacity="0.5"/>
 
-            <Label
-                Text="Tere"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="50"
-                HorizontalOptions="Center" />
+        <ScrollView>
+            <VerticalStackLayout
+                Spacing="25"
+                Padding="30,0"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand">
 
-            <Button
-                Text="Lisa ja vaata tooteid"
-                FontSize="20"
-                Clicked="OnNavigateButtonClicked"
-                BackgroundColor="Pink"
-                TextColor="White"
-                BorderColor="White"
-                FontAttributes="Bold"
-                CornerRadius="6"
-                HeightRequest="60"
-                WidthRequest="300"
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"/>
+                <Label
+                    Text="Tere"
+                    SemanticProperties.HeadingLevel="Level1"
+                    FontSize="50"
+                    HorizontalOptions="Center"
+                    TextColor="White"/>
 
-        </VerticalStackLayout>
-    </ScrollView>
+                <Button
+                    Text="Lisa ja vaata tooteid"
+                    FontSize="18"
+                    Clicked="OnNavigateButtonClicked"
+                    BackgroundColor="Pink"
+                    TextColor="White"
+                    BorderColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="6"
+                    HeightRequest="60"
+                    WidthRequest="300"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
 
 </ContentPage>

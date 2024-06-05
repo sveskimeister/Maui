@@ -37,33 +37,32 @@
                         <Grid RowDefinitions="Auto, Auto"
                               ColumnDefinitions="*, Auto"
                               RowSpacing="3"
-                              Padding="3"
+                              Padding="4"
                               BackgroundColor="Pink">
                             <Label Text="{Binding Name}"
                                    FontAttributes="Bold" />
                             <Label Grid.Row="1"
                                    Text="{Binding Price, StringFormat='Price: {0:C}'}"
-                                   FontSize="13"
-                                   FontAttributes="Bold" />
-                            <Button 
-                                    Grid.Column="1"
-                                    Text="Edit"
-                                    TextColor="Pink"
-                                    HeightRequest="30"
-                                    FontSize="13"
-                                    CornerRadius="6"
-                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductsViewModel}}, Path=SetOperatingProductCommand}"
-                                    CommandParameter="{Binding .}"/>
-
+                                   FontAttributes="Bold"
+                                   FontSize="13"/>
                             <Button Grid.Row="1"
                                     Grid.Column="1"
                                     Text="Delete"
                                     TextColor="Pink"
-                                    HeightRequest="30"
                                     FontSize="13"
+                                    HeightRequest="30"
                                     CornerRadius="6"
                                     Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductsViewModel}}, Path=DeleteProductCommand}"
-                                    CommandParameter="{Binding Id}"/>
+                                    CommandParameter="{Binding Id}"/>   
+                            <Button Grid.Column="1"
+                                    Text="Edit"
+                                    FontSize="13"
+                                    TextColor="Pink"
+                                    HeightRequest="30"
+                                    CornerRadius="6"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductsViewModel}}, Path=SetOperatingProductCommand}"
+                                    CommandParameter="{Binding .}"/>
+
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
@@ -98,26 +97,26 @@
                         <Label Text="Price"
                                TextColor="Pink"/>
                         <Entry Text="{Binding OperatingProduct.Price}"
-                               Placeholder="Product price"
-                               Margin="3"
+                               Margin="1"
                                BackgroundColor="Pink"
                                Keyboard="Numeric" />
                     </VerticalStackLayout>
 
                     <Button Grid.Row="1"
                             Grid.ColumnSpan="2"
-                            Text="Update Product"
+                            Text="Update product"
                             TextColor="Pink"
                             HorizontalOptions="Center"
                             VerticalOptions="End"
                             CornerRadius="6"
+                            BorderColor="Pink"
                             Padding="50, 0"
                             Command="{Binding SaveProductCommand}">
                         <Button.Triggers>
                             <DataTrigger TargetType="Button"
                                          Binding="{Binding OperatingProduct.Id}"
                                          Value="0">
-                                <Setter Property="Text" Value="Create Product" />
+                                <Setter Property="Text" Value="Create product" />
                             </DataTrigger>
                         </Button.Triggers>
                     </Button>

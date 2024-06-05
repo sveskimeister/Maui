@@ -552,3 +552,5 @@ C:\Users\opilane\source\repos\Maui\Maui\bin\Debug\net7.0-windows10.0.19041.0\win
 C:\Users\opilane\source\repos\Maui\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\WebView2Loader.dll
 C:\Users\opilane\source\repos\Maui\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.UI.Xaml.Controls.pri
 C:\Users\opilane\source\repos\Maui\Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Maui.sourcelink.json
+C:\Users\opilane\source\repos\Maui\Maui\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\pilt.scale-100.jpg
+C:\Users\opilane\source\repos\Maui\Maui\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\pilt.scale-100.jpg

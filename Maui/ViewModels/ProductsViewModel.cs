@@ -10,9 +10,8 @@ namespace Maui.ViewModels
     public class ProductsViewModel : INotifyPropertyChanged
     {
         private Product _operatingProduct;
-        private bool _isBusy;
         private readonly SQLiteAsyncConnection _database;
-
+    private bool _isBusy;
         public ObservableCollection<Product> Products { get; set; }
         public Product OperatingProduct
         {
@@ -27,9 +26,8 @@ namespace Maui.ViewModels
         }
 
         public string BusyText { get; set; }
-
-        public ICommand SetOperatingProductCommand { get; }
         public ICommand SaveProductCommand { get; }
+        public ICommand SetOperatingProductCommand { get; }
         public ICommand DeleteProductCommand { get; }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -40,7 +38,7 @@ namespace Maui.ViewModels
 
             Products = new ObservableCollection<Product>();
             OperatingProduct = new Product();
-            BusyText = "Loading products...";
+            BusyText = "Loading...";
 
             SetOperatingProductCommand = new Command<Product>(SetOperatingProduct);
             SaveProductCommand = new Command(async () => await SaveProduct());
